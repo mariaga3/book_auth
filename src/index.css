@@ -1,0 +1,13 @@
+*{
+  background-color: #f3f4e7;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+.container{
+  width: 10vh;
+  height: 100vh;
+}
