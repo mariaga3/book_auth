@@ -1,0 +1,50 @@
+// import React from "react";
+// import { Fade } from "react-slideshow-image";
+// import book from "../assets/book1.jpg";
+
+// const SlideImages = [
+//   {
+//     image: book,
+//     text: "First Slide",
+//   },
+//   {
+//     image: book,
+//     text: "Second Slide",
+//   },
+//   {
+//     image: book,
+//     text: "Third Slide",
+//   },
+// ];
+
+// const divstyle = {
+//   display: "flex",
+//   alignItems: "center",
+//   justifyContent: "center",
+//   height: "100px",
+  
+// };
+
+// const textstyle = {
+//   fontStyle: "italic",
+//   fontSize: "17px",
+// };
+
+// const ImageShow = () => {
+//   return (
+//     <div className="slide-container">
+//       <Fade>
+//         {SlideImages.map((image, index) => (
+//           <div key={index}>
+//             <div style={divstyle}>
+//               <img src={image.image} alt={image.text} />
+//               <span style={textstyle}>{image.text}</span>
+//             </div>
+//           </div>
+//         ))}
+//       </Fade>
+//     </div>
+//   );
+// };
+
+// export default ImageShow;

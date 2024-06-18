@@ -1,5 +1,5 @@
 *{
-  background-color: #f3f4e7;
+ 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,6 +8,11 @@
 
 
 .container{
-  width: 10vh;
-  height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f3f4e7;
+}
+
+.container.dark{
+  background: black;
 }
