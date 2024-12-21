@@ -48,10 +48,10 @@ const BooksSlider = () => {
   return (
     <div className={`py-16 relative overflow-hidden ${theme === 'light' ? 'bg-primary' : 'bg-black'}`}>
       {/* Decorative leaves */}
-      <img src={leafImage} alt="Decorative leaf" className={`absolute top-0 left-0 w-48 h-auto pointer-events-none ${theme === 'light' ? 'opacity-20' : 'opacity-30'}`} />
-<img src={leafImage} alt="Decorative leaf" className={`absolute top-0 right-0 w-48 h-auto pointer-events-none transform rotate-90 ${theme === 'light' ? 'opacity-20' : 'opacity-30'}`} />
-<img src={leafImage} alt="Decorative leaf" className={`absolute bottom-0 left-0 w-48 h-auto pointer-events-none transform -rotate-90 ${theme === 'light' ? 'opacity-20' : 'opacity-30'}`} />
-<img src={leafImage} alt="Decorative leaf" className={`absolute bottom-0 right-0 w-48 h-auto pointer-events-none transform rotate-180 ${theme === 'light' ? 'opacity-20' : 'opacity-30'}`} />
+      <img src={leafImage} alt="Decorative leaf" className={`absolute top-0 left-0 w-32 h-auto pointer-events-none ${theme === 'light' ? 'opacity-20' : 'opacity-30'}`} />
+<img src={leafImage} alt="Decorative leaf" className={`absolute top-0 right-0 w-32 h-auto pointer-events-none transform rotate-90 ${theme === 'light' ? 'opacity-20' : 'opacity-30'}`} />
+<img src={leafImage} alt="Decorative leaf" className={`absolute bottom-0 left-0 w-32 h-auto pointer-events-none transform -rotate-90 ${theme === 'light' ? 'opacity-20' : 'opacity-30'}`} />
+<img src={leafImage} alt="Decorative leaf" className={`absolute bottom-0 right-0 w-32 h-auto pointer-events-none transform rotate-180 ${theme === 'light' ? 'opacity-20' : 'opacity-30'}`} />
 <img src={leafImage} alt="Decorative leaf" className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-auto pointer-events-none ${theme === 'light' ? 'opacity-10' : 'opacity-30'}`} />
 
       

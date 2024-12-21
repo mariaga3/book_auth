@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import BooksSlider, { bookData } from './Product';
+import LearningSection from './references';
+import NewsletterSignupPage from '../components/News';
 
 const Home = ({ slides }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -52,7 +54,7 @@ const Home = ({ slides }) => {
                 <div className="absolute inset-0 flex flex-col sm:flex-row items-center p-4">
                   <div className="w-full sm:w-1/2 text-white p-4 sm:p-8 lg:p-16 text-center sm:text-left">
                     <h2 className="text-3xl sm:text-5xl lg:text-7xl font-serif mb-2 sm:mb-4" style={{ fontFamily: "'Trajan Pro', serif" }}>{slide.headline}</h2>
-                    <p className="text-sm sm:text-lg lg:text-2xl mb-2 sm:mb-6 text-gray-300 font-serif">{slide.Desc}</p>
+                    <p className="text-sm sm:text-lg lg:text-2xl mb-2 sm:mb-6 text-gray-300 font-serif">{slide.contents}</p>
                     <p className="text-xs sm:text-sm lg:text-xl mb-4 sm:mb-8 text-white italic">{slide.poem}</p>
                     <button 
                       className="bg-primarydark text-black px-4 py-2 sm:px-6 sm:py-2 lg:px-8 lg:py-3 rounded-md hover:bg-purple-700 transition duration-300 uppercase text-xs sm:text-sm tracking-wider"
@@ -92,6 +94,8 @@ const Home = ({ slides }) => {
       </section>
       <section>
         <BooksSlider books={bookData}/>
+        <LearningSection />
+        
       </section>
     </div>
   );

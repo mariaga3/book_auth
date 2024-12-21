@@ -44,7 +44,7 @@ const About = () => {
           <img 
             src={job} 
             alt="Job Zirikana" 
-            className="rounded-lg shadow-lg w-5/6 max-w-xs mx-auto transition-transform duration-300 ease-in-out hover:scale-105"
+            className="rounded-lg shadow-lg w-5/6 max-w-xs mx-auto transition-transform duration-300 ease-in-out hover:scale-105 pt-5"
           />
         </div>
         <div className="md:w-3/5 md:pl-6">

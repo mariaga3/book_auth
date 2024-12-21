@@ -7,6 +7,8 @@ import BookDetails from './components/BookDetails';
 import { slideData } from './components/Slider';
 import ContactPage from './components/Contact';
 import { ThemeProvider } from './components/ThemeContextSetUp'; // Use ThemeProvider, not ThemeContext
+import BooksSlider from './components/Product';
+import LearningSection from './components/references';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -19,8 +21,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Home slides={slideData}/>} />
             <Route path="/about" element={<About />} />
+            <Route path="/other_books" element={<BooksSlider />} />
             <Route path="/book/:id" element={<BookDetails />} />
             <Route path="/contact-us" element={<ContactPage />} />
+            <Route path="/reference" element={<LearningSection />} />
+            
           </Routes>
         </div>
       </Router>
